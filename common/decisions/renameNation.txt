@@ -1,0 +1,4126 @@
+rename_nation_catagory = {
+		german_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_EMPIRE}
+			}
+		}
+		german_reich = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_REICH}
+			}
+		}
+		german_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_REP}
+			}
+		}
+		german_federal_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {has_government = democratic}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_FRG}
+			}
+		}
+		german_d_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {has_government = communism}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_DR}
+			}
+		}
+		german_greater_reich = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_GR_RE}
+			}
+		}
+		german_greater_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_GR_EMP}
+			}
+		}
+		german_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					original_tag = WGR
+					original_tag = DDR
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_KING}
+			}
+		}
+		german_military_forces = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				GER = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					has_civil_war = yes
+					has_government = neutrality
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_MIL}
+			}
+		}
+		german_nazi_loyalists = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				GER = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				GER = {has_civil_war = yes}
+				GER = {has_government = fascism}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_HIT}
+			}
+		}
+		german_military_government = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = GER
+					GER = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				GER = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				GER = {set_cosmetic_tag = GER_MIL_GOV}
+			}
+		}
+		france_republic_3 = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_government = democratic}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_REP3}
+			}
+		}
+		france_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_REP}
+			}
+		}
+		france_commune = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_government = communism}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_COM}
+			}
+		}
+		france_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_government = communism}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_PR}
+			}
+		}
+		france_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_KING}
+			}
+		}
+		france_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_EMP}
+			}
+		}
+		france_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_government = fascism}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_STATE}
+			}
+		}
+		france_republic_4 = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_REP4}
+			}
+		}
+		france_republic_5 = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}	
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_REP5}
+			}
+		}
+		france_vichy = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				FRA = {is_subject_of = GER}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_VICHY}
+			}
+		}
+		france_national_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				FRA = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					has_civil_war = yes
+					has_government = fascism
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_NA}
+			}
+		}
+		france_peoples_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				FRA = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_civil_war = yes}
+				FRA = {has_government = communism}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_PA}
+			}
+		}
+		communard_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				FRA = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				FRA = {has_civil_war = yes}
+				FRA = {has_government = communism}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_CA}
+			}
+		}
+		france_republican_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				FRA = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					has_civil_war = yes
+					OR = {
+						has_government = communism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_RA}
+			}
+		}
+		france_royal_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = FRA
+					FRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				FRA = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				FRA = {
+					has_civil_war = yes
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				FRA = {set_cosmetic_tag = FRA_ROA}
+			}
+		}
+		united_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_UK}
+			}
+		}
+		united_kingdom_GB_IRE = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_UK_IRE}
+			}
+		}
+		united_kingdom_GB_NI = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_UK_NI}
+			}
+		}
+		british_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_EMP}
+			}
+		}
+		british_greater = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_GREATER}
+			}
+		}
+		british_union = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {has_government = communism}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_UNION}
+			}
+		}
+		british_soviet = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {has_government = communism}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_SOVIET}
+			}
+		}
+		british_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ENG
+					ENG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ENG = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				ENG = {set_cosmetic_tag = ENG_GB}
+			}
+		}
+		italian_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_KING}
+			}
+		}
+		italy_spqr = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+					has_government = communism
+				}}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = SPQR_UNIFIED}
+			}
+		}
+		italy_roman_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_ROM_EMP}
+			}
+		}
+		italian_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_EMP}
+			}
+		}
+		italian_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_REP}
+			}
+		}
+		italian_socialist_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ITA = {has_government = communism}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_SR}
+			}
+		}
+		italian_social_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					ITA = {is_subject_of = GER}
+				}
+				ITA = {has_government = fascism}
+			}
+			remove_effect = {
+				ITA = {set_cosmetic_tag = ITA_SOC}
+			}
+		}
+		soviet_union = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {has_government = communism}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_USSR}
+			}
+		}
+		russian_sfsr = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {has_government = communism}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_SFSR}
+			}
+		}
+		russian_federation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_RUS_FED}
+			}
+		}
+		russian_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_RUS_REP}
+			}
+		}
+		russian_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_EMP}
+			}
+		}
+		russian_tsardom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SOV
+					SOV = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SOV = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SOV = {set_cosmetic_tag = SOV_TSAR}
+			}
+		}
+		united_states = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_USA}
+			}
+		}
+		ussa = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {has_government = communism}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_USSA}
+			}
+		}
+		communist_states = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {has_government = communism}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_COM}
+			}
+		}
+		confederate_states = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				original_tag = USA
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_CSA}
+			}
+		}
+		american_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA ={OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_EMP}
+			}
+		}
+		american_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_KING}
+			}
+		}
+		american_united_federation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_UTD_FED}
+			}
+		}
+		american_federal_union = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_FED_UNION}
+			}
+		}
+		american_imperial_republics = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_IMP_REP}
+			}
+		}
+		american_free_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = USA
+					USA = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				USA ={OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				USA = {set_cosmetic_tag = USA_FREE_REP}
+			}
+		}
+		japan_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = JAP
+					JAP = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				JAP = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				JAP = {set_cosmetic_tag = JAP_EMP}
+			}
+		}
+		japan_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = JAP
+					JAP = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				JAP = {has_government = democratic}
+			}
+			remove_effect = {
+				JAP = {set_cosmetic_tag = JAP_REP}
+			}
+		}
+		japan_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = JAP
+					JAP = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				JAP = {has_government = communism}
+			}
+			remove_effect = {
+				JAP = {set_cosmetic_tag = JAP_PR}
+			}
+		}
+		canada_dominion = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					AND = {
+						CAN = {
+							is_puppet = no
+							is_subject = yes
+						}
+					}
+				}
+				CAN = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_UK}
+			}
+		}
+		canada_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_REP}
+			}
+		}	
+		canada_socalist_confederation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {has_government = communism}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_SOC}
+			}
+		}
+		canada_confederation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {has_government = democratic}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_CON}
+			}
+		}
+		canada_united_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {has_government = democratic}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_UTD}
+			}
+		}
+		canada_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_KING}
+			}
+		}
+		canada_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CAN
+					CAN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CAN = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				CAN = {set_cosmetic_tag = CAN_EMP}
+			}
+		}
+		australia_commonwealth = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				AST = {OR = {
+					has_government = democratic
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				AST = {set_cosmetic_tag = AST_COM}
+			}
+		}
+		australia_dominion = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					AND = {
+						AST = {
+							is_puppet = no
+							is_subject = yes
+						}
+					}
+				}
+				AST = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				AST = {set_cosmetic_tag = AST_UK}
+			}
+		}
+		australia_union = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				AST = {has_government = communism}
+			}
+			remove_effect = {
+				AST = {set_cosmetic_tag = AST_UNION}
+			}
+		}
+		australia_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				AST = {OR = {
+					has_government = fascism
+					has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				AST = {set_cosmetic_tag = AST_EMP}
+			}
+		}
+		australia_federation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				AST = {has_government = democratic}
+			}
+			remove_effect = {
+				AST = {set_cosmetic_tag = AST_FED}
+			}
+		}
+		australia_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = AST
+					AST = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				AST = {OR = {
+					has_government = democratic
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				AST= {set_cosmetic_tag = AST_KING}
+			}
+		}
+		new_zealand = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = NZL
+					NZL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				NZL = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				NZL = {set_cosmetic_tag = NZL_NZL}
+			}
+		}
+		new_zealand_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = NZL
+					NZL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				NZL = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				NZL = {set_cosmetic_tag = NZL_REP}
+			}
+		}
+		new_zealand_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = NZL
+					NZL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				NZL = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				NZL = {set_cosmetic_tag = NZL_KING}
+			}
+		}
+		new_zealand_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = NZL
+					NZL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				NZL = {has_government = communism}
+			}
+			remove_effect = {
+				NZL = {set_cosmetic_tag = NZL_PR}
+			}
+		}
+		new_zealand_dominion = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = NZL
+					NZL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					AND = {NZL = {
+						is_puppet = no
+						is_subject = yes
+					}}
+				}
+				NZL = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				NZL = {set_cosmetic_tag = NZL_DOM}
+			}
+		}
+		south_africa_union = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					AND = {SAF = {
+						is_puppet = no
+						is_subject = yes
+					}}
+				}
+				SAF = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = communism
+				}}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_UNI}
+			}
+		}
+		south_africa_dominion = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					AND = {SAF = {
+						is_puppet = no
+						is_subject = yes
+					}}
+				}
+				SAF = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_DOM}
+			}
+		}
+		south_africa_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SAF = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_REP}
+			}
+		}
+		south_africa_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SAF = {has_government = communism}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_PR}
+			}
+		}
+		south_africa_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SAF = {has_government = fascism}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_STATE}
+			}
+		}
+		cape_commune = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SAF
+					SAF = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SAF = {has_government = communism}
+			}
+			remove_effect = {
+				SAF = {set_cosmetic_tag = SAF_CC}
+			}
+		}
+		british_raj = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					is_subject = no
+					RAJ = {is_subject_of = ENG}
+				}
+				RAJ = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+					has_government = communism
+				}}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_BRIT_RAJ}
+			}
+		}
+		empire_of_india = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					RAJ = {is_puppet = no}
+					is_subject = no
+				}
+				RAJ = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_EMP}
+			}
+		}
+		india_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				RAJ = {has_government = communism}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_PR}
+			}
+		}
+		india_peoples_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				RAJ = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				RAJ = {has_civil_war = yes}
+				RAJ = {OR = {
+					has_government = communism
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_PARMY}
+			}
+		}
+		india_national_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				RAJ = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				RAJ = {
+					has_civil_war = yes
+					has_government = fascism
+				}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_NARMY}
+			}
+		}
+		india_independence_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				RAJ = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				RAJ = {has_civil_war = yes}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_IARMY}
+			}
+		}
+		british_loyalist_forces = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				RAJ = {has_civil_war = yes}
+			}
+			available = {
+				RAJ = {
+					is_subject_of = ENG
+					has_civil_war = yes
+				}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_LOYAL}
+			}
+		}
+		india_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = RAJ
+					RAJ = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				RAJ = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				RAJ = {set_cosmetic_tag = RAJ_REP}
+			}
+		}
+		spanish_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SPR = {OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+					has_government = communism
+				}}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_REP}
+			}
+		}
+		spanish_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SPR = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_STATE}
+			}
+		}
+		spanish_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SPR = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_KING}
+			}
+		}
+		spanish_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SPR = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_EMP}
+			}
+		}
+		spanish_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				SPR = {has_government = communism}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_PR}
+			}
+		}
+		spanish_peoples_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				SPR = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				SPR = {
+					has_civil_war = yes
+					has_government = communism
+				}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_PA}
+			}
+		}
+		spanish_national_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				SPR = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				SPR = {
+					has_civil_war = yes
+					has_government = fascism
+				}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_NA}
+			}
+		}
+		spanish_royal_forces = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				SPR = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				SPR = {
+					has_civil_war = yes
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_RF}
+			}
+		}
+		spanish_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				SPR = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				SPR = {
+					has_civil_war = yes
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_ARMY}
+			}
+		}
+		spanish_republican_army = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = SPR
+					SPR = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				SPR = {has_civil_war = yes}
+			}
+			available = {
+				is_subject = no
+				SPR = {
+					has_civil_war = yes
+					OR = {
+						has_government = communism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				SPR = {set_cosmetic_tag = SPR_REP_ARMY}
+			}
+		}
+		polish_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_REP}
+			}
+		}
+		polish_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {has_government = communism}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_PEO_REP}
+			}
+		}
+		polish_commonwealth = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_COMM}
+			}
+		}
+		polish_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_KING}
+			}
+		}
+		polish_federation = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_FED}
+			}
+		}
+		polish_united_states = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = neutrality
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_US}
+			}
+		}
+		polish_socialist_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {has_government = communism}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_SOC_REP}
+			}
+		}
+		polish_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {has_government = fascism}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_STATE}
+			}
+		}
+		polish_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = POL
+					POL = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				POL = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				POL = {set_cosmetic_tag = POL_EMP}
+			}
+		}
+		romanian_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ROM
+					ROM = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ROM = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				ROM = {set_cosmetic_tag = ROM_KING}
+			}
+		}
+		romanian_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ROM
+					ROM = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ROM = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				ROM = {set_cosmetic_tag = ROM_REP}
+			}
+		}
+		romanian_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ROM
+					ROM = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ROM = {has_government = communism}
+			}
+			remove_effect = {
+				ROM = {set_cosmetic_tag = ROM_PR}
+			}
+		}
+		romanian_socialist_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ROM
+					ROM = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ROM = {has_government = communism}
+			}
+			remove_effect = {
+				ROM = {set_cosmetic_tag = ROM_SR}
+			}
+		}
+		romania_principality = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = ROM
+					ROM = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				ROM = {OR{
+					has_government = democratic
+					has_government = fascism
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				ROM = {set_cosmetic_tag = ROM_PRI}
+			}
+		}
+		czechoslovak_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_REP}
+			}
+		}
+		czechoslovak_republic_first = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_REP1}
+			}
+		}
+		czechoslovak_republic_second = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_REP2}
+			}
+		}
+		czechoslovak_republic_third = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_REP3}
+			}
+		}
+		czechoslovak_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {has_government = communism}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_PR}
+			}
+		}
+		czech_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_CZECH}
+			}
+		}
+		bohemia_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_BOH_KING}
+			}
+		}
+		czech_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {has_government = communism}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_CZECH_PR}
+			}
+		}
+		czech_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_CZECH_EMP}
+			}
+		}
+		czech_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_CZECH_KING}
+			}
+		}
+		czechoslovak_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_KING}
+			}
+		}
+		czechoslovak_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = CZE
+					CZE = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				CZE = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				CZE = {set_cosmetic_tag = CZE_EMP}
+			}
+		}
+		yugoslavia_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_KING}
+			}
+		}
+		yugoslavia_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_REP}
+			}
+		}
+		yugoslavia_federal_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_FR}
+			}
+		}
+		yugoslavia_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = neutrality
+					has_government = fascism
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_EMP}
+			}
+		}
+		yugoslavia_socialist_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = communism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_SR}
+			}
+		}
+		yugoslavia_socialist_federal_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = YUG
+					YUG = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				YUG = {OR = {
+					has_government = communism
+					has_government = democratic
+				}}
+			}
+			remove_effect = {
+				YUG = {set_cosmetic_tag = YUG_SFR}
+			}
+		}
+		hungary_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = HUN
+					HUN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				HUN = {OR = {
+					has_government = fascism
+					has_government = democratic
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				HUN = {set_cosmetic_tag = HUN_KING}
+			}
+		}
+		hungary_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = HUN
+					HUN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				HUN = {OR = {
+					has_government = fascism
+					has_government = democratic
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				HUN = {set_cosmetic_tag = HUN_REP}
+			}
+		}
+		hungary_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = HUN
+					HUN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				HUN = {OR = {
+					has_government = fascism
+					has_government = neutrality
+				}}
+			}
+			remove_effect = {
+				HUN = {set_cosmetic_tag = HUN_EMP}
+			}
+		}
+		hungary_peoples_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = HUN
+					HUN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				HUN = {has_government = communism}
+			}
+			remove_effect = {
+				HUN = {set_cosmetic_tag = HUN_PR}
+			}
+		}
+		hungary_AUH = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = HUN
+					HUN = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+			}
+			remove_effect = {
+				HUN = {set_cosmetic_tag = HUN_EMPIRE}
+			}
+		}
+		mexico_empire = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_EMP}
+			}
+		}
+		mexico_kingdom = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_KING}
+			}
+		}
+		mexico_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_REP}
+			}
+		}
+		mexico_state = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_STATE}
+			}
+		}
+		mexico_mil_junta = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_MIL_GOV}
+			}
+		}
+		mexico_federal_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_FR}
+			}
+		}
+		mexico_united_states = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_US}
+			}
+		}
+		mexico_catholic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_CATH}
+			}
+		}
+		mexico_soviet_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					has_government = communism
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_SOV_REP}
+			}
+		}
+		mexico_socialist_republic = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					has_government = communism
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_SR}
+			}
+		}
+		mexico_prov_gov = {
+			
+			cost = 0
+			days_re_enable = 0
+			days_remove = 1
+			visible = { 
+				OR = {
+					original_tag = MEX
+					MEX = {
+						OR = {
+							is_subject_of = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+			available = {
+				is_subject = no
+				MEX = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			remove_effect = {
+				MEX = {set_cosmetic_tag = MEX_PROV}
+			}
+		}
+}
